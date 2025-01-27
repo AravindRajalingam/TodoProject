@@ -5,7 +5,7 @@ const mysql = require("mysql2/promise");
 dotenv.config({ path: path.join(__dirname, "config", "config.env") });
 
 const sequelize = new Sequelize("todos_db", "root", "aravind@2004", {
-  host: "192.168.183.150",
+  host: "localhost",
   port: "3306",
   dialect: "mysql",
 });
