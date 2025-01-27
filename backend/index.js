@@ -18,19 +18,3 @@ app.listen(process.env.PORT, () => {
 const route = require("./routes/route");
 
 app.use(route);
-
-// const DBConnection = () => {
-//   try {
-//     const connection = mysql.createConnection({
-//       host: process.env.DATABASEHOST,
-//       port: process.env.DATABASEPORT,
-//       user: process.env.DATABASEUSER,
-//       password: process.env.DATABASEPASS,
-//       database: process.env.DATABASENAME,
-//     });
-//     return connection;
-//   } catch (err) {
-//     console.log("Database connection error");
-//     console.error(err);
-//   }
-// };
